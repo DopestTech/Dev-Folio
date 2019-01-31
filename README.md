@@ -1,4 +1,4 @@
-# DevFolio - Free Templates for Developers!
+# 🔥 DevFolio - Free Templates for Developers!
 
 This is a collection of royalty free templates for developers to use. I am trying to add at least one a month.
 
