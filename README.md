@@ -9,4 +9,7 @@ We are also opening the repo for changes to be made to the templates that are al
 Minimal Grid
 https://sleepy-mirzakhani-517665.netlify.com/
 
+Brutalist
+*Coming soon!*
+
 
