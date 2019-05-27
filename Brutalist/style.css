@@ -1,0 +1,444 @@
+
+/*
+-------------------------
+GENERAL STUFF AND
+FLEXBOX
+-------------------------
+*/
+
+body {
+  overflow: hidden;
+  margin-left: 60px;
+  margin-top: 20px;
+
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -1;
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(0, 0, 0);
+}
+
+section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+
+.header {
+  align-items: baseline;
+}
+
+.column-left {
+  width: 10%;
+}
+
+.column-main {
+  width: 90%;
+}
+
+.column-main-container-large {
+  padding-right: 10%;
+}
+
+.column-main-container-small {
+  padding-right: 50%;
+}
+
+.column-main-project-image {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 125px;
+}
+
+.column-with-links {
+  padding-right: 0;
+}
+
+.column-right {
+  float: right;
+  margin-right: 35px;
+}
+
+.about {
+  margin-top: 180px;
+}
+
+.footer {
+  margin-bottom: 40px;
+}
+
+
+/*
+-------------------------
+TEXT STYLES
+-------------------------
+*/
+
+h1 {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: capitalize;
+	color: #8E8E8E ;
+	transform: translateY(7px);
+}
+
+.logo-type {
+  transform: none;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  padding-right: 20px;
+  display: inline;
+}
+
+
+/*
+-------------------------
+LINK AND HOVER STYLES
+-------------------------
+*/
+
+.text-light {
+	color: #909090;
+	text-decoration: none;
+	padding-right: 20px;
+	padding-bottom: 0;
+	height: 0px;
+}
+
+
+
+.text-light-as-link {
+	color: #000000;
+	text-decoration: none;
+	padding-right: 20px;
+	padding-bottom: 0;
+	height: 0px;
+}
+
+.text-light-as-link:hover {
+	color: rgb(6, 62, 248);
+	padding-bottom: 0;
+}
+
+.text-light-as-link:hover::after {
+  width: 0;
+  padding-bottom: 0;
+}
+
+.text-light-link-as-single-line {
+  margin: 0 0 55px 0;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 12px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  margin-top: 8px;
+  transition: width 0.3s;
+}
+
+a:hover {
+	color: rgb(6, 62, 248);
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+.link {
+	font-size: 72px;
+	line-height: 1;
+	color: #909090;
+	margin-right: 80px;
+	transform: translateY(35px);
+}
+
+.last-link-without-margin {
+  margin-right: 0;
+}
+
+.link-download::after,
+.link-preview::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  margin-top: 20px;
+  transition: width 0.3s;
+}
+
+.link-download:hover::after {
+  width: 115%;
+}
+
+.link-preview:hover::after {
+  width: 112%;
+}
+
+.link-wip-folio:hover::after {
+  width: 117%;
+}
+
+.link-line-break {
+  display: none;
+}
+
+/*
+-------------------------
+MAKE IT
+RESPONSIVE
+-------------------------
+*/
+
+
+/*Links*/
+
+@media(max-width: 1700px) {
+
+  /*"View Work"-Links break from here*/
+
+  .link {
+    margin-right: 60px;
+    transform: translateY(25px);
+  }
+
+  .link-line-break {
+    display: block;
+  }
+
+}
+
+@media all and (max-width: 1024px) {
+
+  body {
+    margin-left: 25px;
+    margin-top: 40px;
+  }
+
+  .column-left {
+    width: 15%;
+  }
+
+  .column-main {
+    width: 85%;
+  }
+
+  .column-main-project-image {
+    margin-bottom: 80px;
+  }
+
+  .header-contact {
+    display: none;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .link {
+    font-size: 60px;
+    margin-right: 20px;
+    transform: translateY(25px);
+  }
+
+  .link-download {
+    background-size: 20px;
+    padding: 0px 45px 15px 0px;
+  }
+
+  .link-preview {
+    background-size: 20px;
+    padding: 0px 45px 5px 0px;
+  }
+
+  .link-wip-folio {
+    background-size: 20px;
+    padding: 0px 45px 5px 0px;
+  }
+
+}
+
+
+/* Tablet */
+@media all and (max-width: 770px) {
+
+  section {
+    display: block;
+    margin-bottom: 80px;
+  }
+
+  h1 {
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .link {
+    font-size: 46px;
+    margin-right: 100px;
+    transform: translateY(0);
+  }
+
+  .link-download {
+    background-size: 18px;
+    padding: 0px 40px 12px 0px;
+  }
+
+  .link-preview {
+    background-size: 18px;
+    padding: 0px 40px 10px 0px;
+    margin-bottom: 2px;
+  }
+
+  .link-download::after,
+  .link-preview::after,
+  .link-wip-folio::after {
+    display: none;
+  }
+
+  .text-light,
+  .text-light-as-link {
+    font-style: 400;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .column-left {
+    width: 100%;
+  }
+
+  .column-main {
+    width: 100%;
+  }
+
+  .column-main-container-large {
+    padding-right: 10vw;
+  }
+
+  .column-main-container-small {
+    padding-right: 10vw;
+  }
+
+  .column-main-project-image {
+    margin-bottom: 40px;
+  }
+
+}
+
+
+/* Smartphone */
+@media all and (max-width: 490px) {
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  .column-main-container-large {
+    padding-right: 10px;
+  }
+
+  .column-main-container-small {
+    padding-right: 10px;
+  }
+
+  h1 {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .header-services {
+    font-size: 23px;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    /*overflow: hidden;*/
+  }
+
+  .link {
+    font-size: 23px;
+    margin-right: 20px;
+  }
+
+  .link-within-h1 {
+    font-size: 23px !important;
+	  padding-right: 5px;
+}
+
+  .link-download {
+    background-size: 10px;
+    padding: 0px 20px 10px 0px;
+  }
+
+  .link-preview {
+    background-size: 10px;
+    padding: 0px 20px 5px 0px;
+  }
+
+  .text-light,
+  .text-light-as-link {
+    font-style: 400;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .about {
+    margin-top: 90px;
+    margin-bottom: 200px;
+  }
+
+}
+
+@media all and (max-width: 400px) {
+
+  .header-services {
+    font-size: 23px;
+    display: block;
+    width: 100%;
+    white-space: normal;
+    /*overflow: hidden;*/
+  }
+
+}
