@@ -1,15 +1,17 @@
-# 🔥 DevFolio - Free Templates for Developers! 🔥
+# 🔥 DevFolio - Free Portfolio Templates for Developers! 🔥
 
-This is a collection of royalty free templates for developers to use. I am trying to add at least one a month.
+This is a collection of royalty free templates for developers to use, so they can get their work online without worrying about having to design a website.
 
-We are also opening the repo for changes to be made to the templates that are already here! Get involved and improve them where you can!
+We are also opening the repo for changes to be made to the templates that are already here! Get involved and improve them where you can and feel free to contribute new templates to the catalogue.
 
-### Templates
+**We are proud to be supporting #HACKTOBERFEST!**
 
-Minimal Grid
+![hacktoberfest](https://thepracticaldev.s3.amazonaws.com/i/4qzk6l54da8fq9t37b2g.png)
+
+## Templates
+
+**Minimal Grid**
 https://sleepy-mirzakhani-517665.netlify.com/
 
-Brutalist
-*Coming soon!*
-
-
+**Brutalist**
+Template to be updated soon.
