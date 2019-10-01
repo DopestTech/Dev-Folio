@@ -7,7 +7,6 @@ FLEXBOX
 */
 
 body {
-  overflow: hidden;
   margin-left: 60px;
   margin-top: 20px;
 
@@ -182,29 +181,6 @@ a:hover::after {
 
 .last-link-without-margin {
   margin-right: 0;
-}
-
-.link-download::after,
-.link-preview::after{
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #000;
-  margin-top: 20px;
-  transition: width 0.3s;
-}
-
-.link-download:hover::after {
-  width: 115%;
-}
-
-.link-preview:hover::after {
-  width: 112%;
-}
-
-.link-wip-folio:hover::after {
-  width: 117%;
 }
 
 .link-line-break {
