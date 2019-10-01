@@ -14,4 +14,4 @@ We are also opening the repo for changes to be made to the templates that are al
 https://sleepy-mirzakhani-517665.netlify.com/
 
 **Brutalist**
-Template to be updated soon.
+https://zen-fermat-ea885e.netlify.com/
