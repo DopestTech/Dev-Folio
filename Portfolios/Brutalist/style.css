@@ -437,7 +437,7 @@ RESPONSIVE
 	}
 }
 
-/* Aligning section content with flexbox */
+/* Aligning section content using class with flexbox */
 
 .tools {
 	display: -webkit-box;
