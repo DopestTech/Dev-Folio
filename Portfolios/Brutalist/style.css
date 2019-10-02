@@ -20,28 +20,18 @@ body {
 }
 
 section {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: start;
-	-ms-flex-pack: start;
 	justify-content: flex-start;
-	-webkit-box-align: end;
-	-ms-flex-align: end;
 	align-items: flex-end;
 	margin-bottom: 80px;
 }
 
 .header {
-	-webkit-box-align: baseline;
-	-ms-flex-align: baseline;
 	align-items: baseline;
 }
 
 .column-left {
 	width: 10%;
-	display: -webkit-box;
-	display: -ms-flexbox;
 }
 
 .column-main {
@@ -102,12 +92,10 @@ h2 {
 	font-weight: 400;
 	text-transform: capitalize;
 	color: #8e8e8e;
-	-webkit-transform: translateY(7px);
 	transform: translateY(7px);
 }
 
 .logo-type {
-	-webkit-transform: none;
 	transform: none;
 }
 
@@ -158,7 +146,6 @@ a {
 	text-decoration: none;
 	padding-bottom: 12px;
 	display: inline-block;
-	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 
@@ -169,7 +156,6 @@ a::after {
 	height: 2px;
 	background: #000;
 	margin-top: 8px;
-	-webkit-transition: width 0.3s;
 	transition: width 0.3s;
 }
 
@@ -186,8 +172,7 @@ a:hover::after {
 	line-height: 1;
 	color: #909090;
 	margin-right: 80px;
-	/* -webkit-transform: translateY(35px);
-	transform: translateY(35px); */
+	/* transform: translateY(35px); */
 }
 
 .last-link-without-margin {
@@ -212,7 +197,6 @@ RESPONSIVE
 
 	.link {
 		margin-right: 60px;
-		-webkit-transform: translateY(25px);
 		transform: translateY(25px);
 		padding-bottom: 0;
 	}
@@ -255,7 +239,6 @@ RESPONSIVE
 	.link {
 		font-size: 52px;
 		margin-right: 20px;
-		-webkit-transform: translateY(25px);
 		transform: translateY(25px);
 	}
 
@@ -291,9 +274,7 @@ RESPONSIVE
 
 	h2 {
 		margin-bottom: 30px;
-		-webkit-margin-before: 0.3em;
 		margin-block-start: 0.3em;
-		-webkit-margin-after: 0.3em;
 		margin-block-end: 0.3em;
 	}
 
@@ -304,7 +285,6 @@ RESPONSIVE
 	.link {
 		font-size: 46px;
 		margin-right: 100px;
-		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
 
@@ -376,9 +356,7 @@ RESPONSIVE
 
 	h3 {
 		font-size: 18px;
-		-webkit-margin-before: 0.3em;
 		margin-block-start: 0.3em;
-		-webkit-margin-after: 0em;
 		margin-block-end: 0em;
 	}
 
@@ -440,13 +418,8 @@ RESPONSIVE
 /* Aligning section content using class with flexbox */
 
 .tools {
-	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: start;
-	-ms-flex-pack: start;
 	justify-content: flex-start;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
 	align-items: flex-start;
 }
