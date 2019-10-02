@@ -266,7 +266,7 @@ RESPONSIVE
 	}
 
 	h1 {
-		font-size: 46px;
+		font-size: 36px;
 		font-weight: 400;
 		line-height: 1.1;
 		margin: 0;
@@ -283,7 +283,7 @@ RESPONSIVE
 	}
 
 	.link {
-		font-size: 46px;
+		font-size: 36px;
 		margin-right: 100px;
 		transform: translateY(0);
 	}
@@ -308,7 +308,7 @@ RESPONSIVE
 	.text-light,
 	.text-light-as-link {
 		font-style: 400;
-		font-size: 46px;
+		font-size: 36px;
 		line-height: 1.4;
 	}
 
