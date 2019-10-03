@@ -1,4 +1,3 @@
-
 /*
 -------------------------
 GENERAL STUFF AND
@@ -10,7 +9,7 @@ body {
   margin-left: 60px;
   margin-top: 20px;
 
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
@@ -33,6 +32,7 @@ section {
 
 .column-left {
   width: 10%;
+  padding-right: 5px;
 }
 
 .column-main {
@@ -74,7 +74,6 @@ section {
   margin-bottom: 40px;
 }
 
-
 /*
 -------------------------
 TEXT STYLES
@@ -89,11 +88,11 @@ h1 {
 }
 
 h2 {
-	font-size: 16px;
-	font-weight: 400;
-	text-transform: capitalize;
-	color: #8E8E8E ;
-	transform: translateY(7px);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #8e8e8e;
+  transform: translateY(7px);
 }
 
 .logo-type {
@@ -107,7 +106,6 @@ h3 {
   display: inline;
 }
 
-
 /*
 -------------------------
 LINK AND HOVER STYLES
@@ -115,26 +113,24 @@ LINK AND HOVER STYLES
 */
 
 .text-light {
-	color: #909090;
-	text-decoration: none;
-	padding-right: 20px;
-	padding-bottom: 0;
-	height: 0px;
+  color: #909090;
+  text-decoration: none;
+  padding-right: 20px;
+  padding-bottom: 0;
+  height: 0px;
 }
 
-
-
 .text-light-as-link {
-	color: #000000;
-	text-decoration: none;
-	padding-right: 20px;
-	padding-bottom: 0;
-	height: 0px;
+  color: #000000;
+  text-decoration: none;
+  padding-right: 20px;
+  padding-bottom: 0;
+  height: 0px;
 }
 
 .text-light-as-link:hover {
-	color: rgb(6, 62, 248);
-	padding-bottom: 0;
+  color: rgb(6, 62, 248);
+  padding-bottom: 0;
 }
 
 .text-light-as-link:hover::after {
@@ -154,7 +150,7 @@ a {
 }
 
 a::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
@@ -164,7 +160,7 @@ a::after {
 }
 
 a:hover {
-	color: rgb(6, 62, 248);
+  color: rgb(6, 62, 248);
 }
 
 a:hover::after {
@@ -172,11 +168,11 @@ a:hover::after {
 }
 
 .link {
-	font-size: 72px;
-	line-height: 1;
-	color: #909090;
-	margin-right: 80px;
-	transform: translateY(35px);
+  font-size: 72px;
+  line-height: 1;
+  color: #909090;
+  margin-right: 80px;
+  transform: translateY(35px);
 }
 
 .last-link-without-margin {
@@ -194,11 +190,9 @@ RESPONSIVE
 -------------------------
 */
 
-
 /*Links*/
 
-@media(max-width: 1700px) {
-
+@media (max-width: 1700px) {
   /*"View Work"-Links break from here*/
 
   .link {
@@ -209,11 +203,9 @@ RESPONSIVE
   .link-line-break {
     display: block;
   }
-
 }
 
 @media all and (max-width: 1024px) {
-
   body {
     margin-left: 25px;
     margin-top: 40px;
@@ -259,13 +251,10 @@ RESPONSIVE
     background-size: 20px;
     padding: 0px 45px 5px 0px;
   }
-
 }
-
 
 /* Tablet */
 @media all and (max-width: 770px) {
-
   section {
     display: block;
     margin-bottom: 80px;
@@ -335,13 +324,10 @@ RESPONSIVE
   .column-main-project-image {
     margin-bottom: 40px;
   }
-
 }
-
 
 /* Smartphone */
 @media all and (max-width: 490px) {
-
   section {
     margin-bottom: 40px;
   }
@@ -380,8 +366,8 @@ RESPONSIVE
 
   .link-within-h1 {
     font-size: 23px !important;
-	  padding-right: 5px;
-}
+    padding-right: 5px;
+  }
 
   .link-download {
     background-size: 10px;
@@ -404,11 +390,9 @@ RESPONSIVE
     margin-top: 90px;
     margin-bottom: 200px;
   }
-
 }
 
 @media all and (max-width: 400px) {
-
   .header-services {
     font-size: 23px;
     display: block;
@@ -416,5 +400,4 @@ RESPONSIVE
     white-space: normal;
     /*overflow: hidden;*/
   }
-
 }
