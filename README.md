@@ -25,3 +25,5 @@ https://blackrockdigital.github.io/startbootstrap-freelancer/
 **Personal Bootstrapy**
 https://github.com/iampavangandhi/iampavangandhi.github.io/
 
+**Stylish Portfolio**
+https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/
