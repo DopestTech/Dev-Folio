@@ -11,7 +11,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
-  letter-spacing: -1;
+  letter-spacing: -1px;
   color: white;
   background-color: #000000;
 }
