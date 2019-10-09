@@ -32,6 +32,7 @@ section {
 
 .column-left {
   width: 10%;
+  padding-right: 5px;
 }
 
 .column-main {
