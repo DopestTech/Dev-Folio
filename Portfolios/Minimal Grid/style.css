@@ -47,6 +47,10 @@ p {
     margin-bottom: 1.5em
 }
 
+.popUpdesc {
+    display: none;
+}
+
 /* End of Reset section */
 
 /************************/
@@ -58,6 +62,7 @@ body {
     color: #616161;
     background-color: #fafafa;
     line-height: 1.5;
+    position: relative;
 }
 
 a {
@@ -173,7 +178,7 @@ b {
 
 .projects {
     margin-top: 80vh;
-    background-color: #eee
+    background-color: #eee;
 }
 
 .projects .projects-collage {
@@ -334,8 +339,8 @@ a.button-slide:hover:before,a.button-slide:focus:before {
     top: 0
 }
 
-footer {
-    padding: 6rem 0 3rem
+footer, .content {
+    padding: 6rem 0 3rem;
 }
 
 footer ul {
@@ -396,3 +401,121 @@ footer ul li a:hover:after {
 }
 
 /* Contact section ends */
+
+/****************************/
+
+/* PopUp section begins */
+.popUp{
+    color: black;
+    /* height: 70vh; */
+    width: 80vw;
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    background-color: #ffffff;
+    box-shadow: 0 0 17px 2px rgba(128, 128, 128, 0.089);
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.popUp .popUpImg{
+    background: url('https://images.unsplash.com/photo-1526049997133-25caee4c5796?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a785d2392ba5c7683a2b09ee1b40b20&auto=format&fit=crop&w=1048&q=80');
+    background-position: center;
+    background-size: cover;
+    /* height: 70vh; */
+    background-position: center
+}
+
+.popUp div:nth-child(2){
+    padding: 10vh 2em;
+    position: relative;
+} 
+
+.popUp span{
+    display: block;
+    position: absolute;
+    top: 4%;
+    padding: 5px 20px;
+    border-radius: 200px;
+    font-size: 2em;
+    background-color: black;
+    color: honeydew;
+    text-align: center;
+    right: 5%; 
+    cursor: pointer;
+    user-select: none;
+}
+
+.popUp div:nth-child(2) h1{
+    font-size: 2.3em;
+    margin-bottom: 1em;
+}
+
+.popUp div:nth-child(2) p{
+    font-size: 0.9em;
+}
+
+.popUp div:nth-child(2) div{
+    display: grid;
+    grid-template-columns: repeat(2, 10%);
+}
+
+.popUp div:nth-child(2) div a:nth-child(1){
+    width: 20px;
+    height: 20px;
+    background: url('https://image.flaticon.com/icons/svg/1051/1051377.svg');
+    background-size: cover;
+    display: block;
+}
+
+.popUp div:nth-child(2) div a:nth-child(2){
+    width: 20px;
+    height: 20px;
+    background: url('https://image.flaticon.com/icons/svg/1246/1246334.svg');
+    background-size: cover;
+    display: block;
+}
+
+
+/* Tablet styling for popUp */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .popUp{
+        width: 95vw;
+        left: 2.5vw;
+        display: block;
+        top: 5vh;
+    }
+
+    .popUp .popUpImg{
+        background-size: cover;
+        background-position: center;
+        /* display: none; */
+        width: 95vw;
+        height: 50vh;
+    }
+}
+
+/* END OF Tablet styling for popUp */
+
+
+/* START OF styling mobile view for popUp */
+@media (min-width: 320px) and (max-width: 480px) {
+ .popUp{
+        width: 95vw;
+        left: 2.5vw;
+        display: block;
+         top: 1vh;
+         height: 140vh;
+         position: static;
+    }
+
+    .popUp .popUpImg{
+        background-size: cover;
+        background-position: center;
+        /* display: none; */
+        width: 95vw;
+        height: 50vh;
+    }
+}
+/* END OF styling mobile view for popUp */
