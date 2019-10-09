@@ -57,6 +57,15 @@ section {
 .column-with-links {
   padding-right: 0;
 }
+.column-with-links a {
+  font-size: 72px;
+  line-height: 1;
+  color: #909090;
+  margin-right: 80px;
+}
+.column-with-links a:last-child {
+  margin-right: 0;
+}
 
 .column-right {
   float: right;
@@ -160,18 +169,6 @@ a:hover {
 
 a:hover::after {
   width: 100%;
-}
-
-.link {
-  font-size: 72px;
-  line-height: 1;
-  color: #909090;
-  margin-right: 80px;
-  /* transform: translateY(35px); */
-}
-
-.last-link-without-margin {
-  margin-right: 0;
 }
 
 .link-line-break {

@@ -59,6 +59,17 @@ section {
 
 .column-with-links {
   padding-right: 0;
+
+  a {
+    font-size: 72px;
+    line-height: 1;
+    color: #909090;
+    margin-right: 80px;
+  }
+
+  a:last-child {
+    margin-right: 0;
+  }
 }
 
 .column-right {
@@ -165,18 +176,6 @@ a:hover {
 
 a:hover::after {
   width: 100%;
-}
-
-.link {
-  font-size: 72px;
-  line-height: 1;
-  color: #909090;
-  margin-right: 80px;
-  /* transform: translateY(35px); */
-}
-
-.last-link-without-margin {
-  margin-right: 0;
 }
 
 .link-line-break {
@@ -376,7 +375,7 @@ RESPONSIVE
     font-size: 23px;
     margin-right: 20px;
   }
-  
+
   .link-download {
     background-size: 10px;
     padding: 0px 20px 10px 0px;
