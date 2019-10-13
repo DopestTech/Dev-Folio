@@ -1,4 +1,4 @@
-$(window).load(() => {
+  $(window).load(() => {
   windowLoaded();
 });
 
