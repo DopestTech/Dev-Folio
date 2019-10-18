@@ -4,15 +4,18 @@ GENERAL STUFF AND
 FLEXBOX
 -------------------------
 */
+
 body {
   margin-left: 60px;
   margin-top: 20px;
+
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: -1px;
-  color: white;
+  color: rgb(255, 255, 255);
+
   background-color: #000000;
 }
 
@@ -56,15 +59,17 @@ section {
 
 .column-with-links {
   padding-right: 0;
-}
-.column-with-links a {
-  font-size: 72px;
-  line-height: 1;
-  color: #909090;
-  margin-right: 80px;
-}
-.column-with-links a:last-child {
-  margin-right: 0;
+
+  a {
+    font-size: 72px;
+    line-height: 1;
+    color: #909090;
+    margin-right: 80px;
+  }
+
+  a:last-child {
+    margin-right: 0;
+  }
 }
 
 .column-right {
@@ -85,6 +90,7 @@ section {
 TEXT STYLES
 -------------------------
 */
+
 h1 {
   font-size: 72px;
   font-weight: 400;
@@ -116,6 +122,7 @@ h3 {
 LINK AND HOVER STYLES
 -------------------------
 */
+
 .text-light {
   color: #909090;
   text-decoration: none;
@@ -133,7 +140,7 @@ LINK AND HOVER STYLES
 }
 
 .text-light-as-link:hover {
-  color: #063ef8;
+  color: rgb(6, 62, 248);
   padding-bottom: 0;
 }
 
@@ -164,7 +171,7 @@ a::after {
 }
 
 a:hover {
-  color: #063ef8;
+  color: rgb(6, 62, 248);
 }
 
 a:hover::after {
@@ -181,9 +188,12 @@ MAKE IT
 RESPONSIVE
 -------------------------
 */
+
 /*Links*/
+
 @media (max-width: 1700px) {
   /*"View Work"-Links break from here*/
+
   .link {
     margin-right: 60px;
     transform: translateY(25px);
@@ -194,6 +204,7 @@ RESPONSIVE
     display: block;
   }
 }
+
 @media all and (max-width: 1024px) {
   body {
     margin-left: 25px;
@@ -245,6 +256,7 @@ RESPONSIVE
     padding: 0px 45px 5px 0px;
   }
 }
+
 /* Tablet */
 @media all and (max-width: 770px) {
   section {
@@ -287,13 +299,13 @@ RESPONSIVE
   }
 
   .link-download::after,
-.link-preview::after,
-.link-wip-folio::after {
+  .link-preview::after,
+  .link-wip-folio::after {
     display: none;
   }
 
   .text-light,
-.text-light-as-link {
+  .text-light-as-link {
     font-size: 36px;
     line-height: 1.4;
   }
@@ -318,6 +330,7 @@ RESPONSIVE
     margin-bottom: 40px;
   }
 }
+
 /* Smartphone */
 @media all and (max-width: 490px) {
   section {
@@ -337,10 +350,11 @@ RESPONSIVE
     font-weight: 400;
     line-height: 1.3;
     margin: 0;
-  }
-  h1 a {
-    font-size: 23px !important;
-    padding-right: 5px;
+
+    & a {
+      font-size: 23px !important;
+      padding-right: 5px;
+    }
   }
 
   h3 {
@@ -373,7 +387,7 @@ RESPONSIVE
   }
 
   .text-light,
-.text-light-as-link {
+  .text-light-as-link {
     font-size: 18px;
     line-height: 1.4;
   }
@@ -387,6 +401,7 @@ RESPONSIVE
     font-size: 14px;
   }
 }
+
 @media all and (max-width: 400px) {
   .header-services {
     font-size: 23px;
@@ -396,12 +411,12 @@ RESPONSIVE
     /*overflow: hidden;*/
   }
 }
+
 /* Aligning section content using class with flexbox */
+
 .tools {
   display: -ms-flexbox;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
-
-/*# sourceMappingURL=style.css.map */
