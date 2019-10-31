@@ -1,0 +1,124 @@
+/* Import google font */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+html {
+    background: black;
+	overflow: scroll;
+    overflow-x: hidden; /* Remove scrollbar */
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar */
+    background: transparent;
+}
+
+body {
+  font-family:'Inconsolata', monospace;
+  font-size: 14px;
+  color: #CDD2E9;
+  font-weight: 400;
+}
+
+#wrapper-center{
+  margin: 0 auto;
+  width: 650px;
+  margin-top:10%;
+}
+
+.console-container{
+  width:650px;
+  height:450px;
+  padding:10px;
+  overflow:auto;
+  background-color: #263238;
+  border:solid 1px #ECECEC;
+  border-radius: 25px;
+}
+
+::selection{
+  background: #eee
+}
+::-webkit-selection{
+  background: #eee
+}
+::-moz-selection{
+  background: #eee
+}
+a{
+  color: #CDD2E9;
+}
+a:hover,a:focus{
+  background-color: #263238;
+  color: #CDD2E9;
+}
+h2{
+  font-size: 1em;
+  font-weight: 400;
+}
+p{
+  margin-bottom:2em;
+}
+abbr{
+  cursor: help;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+li{
+  margin:1em 0 0;
+}
+span{
+  display: block;
+  color: #CDD2E9;
+  line-height:1;
+}
+
+kbd{
+  font-family: 'Inconsolata', monospace;
+  border:1px solid #999;
+  text-transform: uppercase;
+  padding:0 .2em;
+}
+
+developerName{
+	color:#82AAFF;
+}
+
+developerName::before {
+  content: '/';
+}
+
+input[type="text"]{
+  max-width: 450px;
+  border: none;
+  font-family: inherit;
+  background: #263238;
+  padding:0 .5em;
+}
+input[type="text"]:focus{
+  background: #263238;
+  color: #CDD2E9;
+  outline:none;
+}
+.command{
+  display: block;
+  max-width: 450px;
+  color: #CDD2E9;
+  font-weight: 700;
+  margin: 2em 0;
+}
+
+section{
+  display: none;
+}
+.open{
+  display: block;
+}
+
+.red{
+	color:red;
+}
+
+.green{
+	color:#C3E88D;
+}
