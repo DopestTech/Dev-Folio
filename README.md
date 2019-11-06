@@ -10,6 +10,9 @@ We are also opening the repo for changes to be made to the templates that are al
 
 ## Templates
 
+**Simple Portfolio**
+https://github.com/saadpasta/developerFolio
+
 **Minimal Grid**
 https://sleepy-mirzakhani-517665.netlify.com/
 
@@ -30,3 +33,5 @@ https://brittanychiang.com/
 
 **Stylish Portfolio**
 https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/
+
+
