@@ -64,8 +64,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Load JQuery, as our little script depends on it -->
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css"> <!-- Load our font from Google -->
-	<!-- This is a neat little effect that fades the website in from white when it is loaded. This will work in unison with an 
-  animation effect if you have one. It also means the user won't see the pictures load which is nice. -->
   <!-- The JS code block has been moved into the index.js file.  -->
   <script src="./index.js"></script>
 </head>
@@ -282,10 +280,23 @@
 	
 	<!-- Contact button section begins -->
   <section class="content contact">
-    <a class="button-slide" data-hover="hello@email.com" href="mailto:hello@email.com">
+    <!-- <a class="button-slide" data-hover="hello@email.com" href="mailto:hello@email.com">
       <span>Talk To Me 👌</span>
-    </a>
-	</section>
+    </a> -->
+    <div id='form'>
+      <h1>Drop a message below.</h1>
+      <p>And I'll get to you ASAP</p>
+      <form> 
+        <input type="text" placeholder="Your Awesome Name"> 
+        <input type="email" placeholder="Your cool email address">
+        <textArea placeholder="Message here please">
+        </textArea>
+        <div id='buttonDiv'>
+          <button>Send</button>
+        </div>
+      </form>
+    </div>
+    </section>
 	<!-- Contact button section ends-->
 	
 	<!-- Footer section begins - If you do not want links here, you can change the <li> items to just be <p> tags or whatever you require -->

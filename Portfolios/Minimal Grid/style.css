@@ -476,6 +476,9 @@ footer ul li a:hover:after {
     display: block;
 }
 
+/****************************/
+
+/* PopUp section ends for DESKTOP VIEW */
 
 /* Tablet styling for popUp */
 
@@ -519,3 +522,167 @@ footer ul li a:hover:after {
     }
 }
 /* END OF styling mobile view for popUp */
+
+/* ************************************ */
+
+/* Styling for form on DESKTOP/PC VIEW  */
+#form { 
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+#form h1 { 
+  font-size: 2em;
+  text-transform: uppercase;
+}
+#form p{ 
+  margin-bottom: 3.2em;
+  font-size: 1em;
+  color: white;
+  background-color: #1004c5;
+  width: max-content;
+  padding: 0.4em;
+  border-radius: 100px;
+}
+#form form { 
+  display: block;
+  padding: 1em auto;
+}
+#form form input { 
+  display: block;
+  width: 80%;
+  padding: 1em;
+  color: #616161;
+  margin: 1em 0;
+  font-size: 1.2em;
+  font-family:  "Work Sans", Helvetica, sans-serif;
+  font-weight: lighter;
+  border-radius: 4px;
+  border: 1px solid #000000a6;
+  transition: 0.8s;
+}
+#form form input:focus { 
+  border: 1.2px solid #1004c5;
+}
+#form form textarea { 
+  width: 90%;
+  display: block;
+  padding: 1em;
+  font-size: 1.2em;
+  height: 30vh;
+  border: 1px solid #000000a6;
+  transition: 0.8s;
+  border-radius: 4px;
+  font-family:  "Work Sans", Helvetica, sans-serif;
+  font-weight: lighter;
+}
+#form form button{ 
+  background-color: #1004c5;
+  color: white;
+  border: 0px transparent;
+  font-size: 1.4em;
+  font-family:  "Work Sans", Helvetica, sans-serif;
+  font-weight: bolder;
+  width: 13vw;
+  padding: 1.2em 2.2em;
+  margin: 1em 0;
+  cursor: pointer;
+  transition: all 0.6s;
+  position: relative;
+  border-radius: 100px;
+} 
+
+#form form button::before { 
+  width: 30px;
+  height: 30px;
+  background: url('./Assets/right-arrow.svg');
+  content: '';
+  display: block;
+  position: absolute;
+  left: 10%;
+  background-position: center;
+  background-size: contain;
+  transition:  0.7s;
+  top: 30%;
+}
+
+#form form #buttonDiv { 
+  cursor: pointer;
+  width: 13vw;
+}
+
+#form form #buttonDiv:hover ::before{
+  left: 80%;
+  z-index: 0.61;
+  animation: sending 1 0.3s ;
+}
+
+
+@keyframes sending {
+  from { 
+     opacity: 0.4;
+     /* z-index: -1; */
+  }
+
+  to {
+    opacity: 0.8; 
+    z-index: -1;
+  }
+}
+
+/********************/
+
+/*END OF Styling for form on DESKTOP/PC VIEW  */
+
+/********************/
+
+/* Styling for form on TABLET VIEW  */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #form { 
+    text-align: left;
+    padding: 2em;
+  }
+  #form form #buttonDiv { 
+    width: 100vw;
+  }
+  #form form button { 
+    width: 30vw;
+  }
+}
+/********************/
+
+/* END Styling for form on TABLET VIEW  */
+
+/********************/
+
+/* Styling for form on MOBILE VIEW  */
+@media (min-width: 320px) and (max-width: 480px) {
+  #form { 
+    text-align: left;
+    padding: 0.7em;
+    width: 100%;
+  }
+  #form form #buttonDiv { 
+    width: 100vw;
+  }
+  #form form button { 
+    width: 60vw;
+    padding: 0.8em 1.2em;
+  }
+  #form form button::before { 
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    top: 33%;
+  } 
+  #form form input, #form form textarea { 
+    width: 100%;
+  }
+
+  #form form #buttonDiv { 
+    width: 60vw;
+  }
+}
+/********************/
+
+/* END Styling for form on MOBILE VIEW  */
