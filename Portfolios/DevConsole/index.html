@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Developer Portfolio | [name here]</title><!-- Developer name here -->
+  
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="wrapper-center">
+	<div class="console-container">
+
+		<main>
+			<!-- Loading screen / startup -->
+			<section id="home">
+				<h2>Initialising Developer Portfolio...</h2>
+				<p><font color="green">[name here] (Full-Stack Developer) Portfolio initialised!</font></p><!-- Developer name and title here -->
+				
+				<p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+			</section>
+
+			<!-- Sections can be created below - the id of the sections relate to the available command (Lowercase ONLY), with flavour text/bullet points listed -->
+			
+			<section id="help"><!--'help' command/content -->
+				<h2><span>&raquo; Help?</span></h2>
+				<p><span>Type [command] + <kbd>Enter</kbd></span></p>
+				<ul>
+					<li>'home' -- Back to home</li>
+					<li>'about' -- About the developer</li>
+					<li>'tools' -- Tools and technologies</li>
+					<li>'projects' -- My Projects</li>
+					<li>'services' -- Services</li>
+					<li>'clients' -- My Clients</li>
+					<li>'help' -- Displays the list of available commands</li>
+				</ul>
+			</section>
+			
+			<section id="about"><!--'about' command/content -->
+				<h2><span>&raquo; About You</span></h2>
+				<p>[details-here]
+				</p>
+				
+				<p>He can be contacted on <a href="mailto:[email here]">[email here]</a>.
+			</section>
+
+			<section id="tools"><!--'tools' command/content -->
+				<h2><span>&raquo; Tools and Technologies</span></h2>
+				<ul>
+					<li>[list here]</li>					
+				</ul>
+			</section>
+			
+			<section id="projects"><!--'projects' command/content -->
+				<h2><span>&raquo; My Projects</span></h2>
+				<p>
+				<ul>
+					<li>Client One (<a href="http://www.client.com">www.client.com</a>)</li>
+					<li>Client Two (<a href="http://www.client.com">www.client.com</a>)</li>
+					<li>Client Three (<a href="http://www.client.com">www.client.com</a>)</li>
+					<li>Project (<a href="http://www.project.com">www.project.com</a>)</li>
+				</ul>
+			</section>
+			
+			<section id="services"><!--'services' command/content -->
+				<h2><span>&raquo; Services</span></h2>
+				<ul>
+					<li>[services here]</li>					
+				</ul>
+			</section>
+			
+			<section id="clients"><!--'clients' command/content -->
+				<h2><span>&raquo; My Clients</span></h2>
+				<ul>
+					<li>Client One (<a href="http://www.client.com">www.client.com</a>)</li>
+					<li>Client Two (<a href="http://www.client.com">www.client.com</a>)</li>
+					<li>Client Three (<a href="http://www.client.com">www.client.com</a>)</li>
+				</ul>
+			</section>
+			
+			<!-- Start: Error handler and Common developer commands below -->
+			<section id="exit"><!--'exit' command/content (default command to exit in a normal terminal/console) -->
+				<h2><span>&raquo; Exit</span></h2>
+				<p>Thanks for your time!</p>
+				<p>Developer Portfolio complete.</p>
+			</section>
+			
+			<section id="error"><!-- handler for any unconfigured commmand/text entered by user -->
+				<h2><span>&raquo; Error</span></h2>
+				<p>Command not found!<p> 
+				<p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
+			</section>			
+			
+			<section id="cd..">
+				<p></p>
+			</section>
+			
+			<section id="cd ..">
+				<p></p>
+			</section>
+			
+			<section id="cd\">
+				<p></p>
+			</section>
+			
+			<section id="cd/">
+				<p></p>
+			</section>
+			
+			<section id="cls">
+				<p></p>
+			</section>
+			
+			<section id="clear">
+				<p></p>
+			</section>
+			<!-- End: Error handler and Common developer commands below -->
+
+			<!-- Your name goes below -->
+			<span class="command">
+				<developerName>name</developerName><font color="green">$</font><input type="text" id="console" spellcheck="false" />
+			</span>
+		</main>
+
+	</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
