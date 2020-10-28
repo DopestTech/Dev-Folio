@@ -115,7 +115,7 @@ const windowLoaded = () => {
     if ($(window).width() >= 768) {
       // blur the shiit outta the main element and make it unscrollable. ONLY ON TAB AND DESKTOPS
       $('.projects').css('filter', 'blur(0px)');
-      $('body').css('overflow', 'scroll');
+      $('body').css('overflow', 'auto');
     } else {
       // if been viewed on mobile just take away all element except popUp.
       $('.projects').css('display', 'block');
